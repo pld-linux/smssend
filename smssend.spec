@@ -1,5 +1,5 @@
-Summary:	interface to internet SMS forwarding services
-Summary(pl):	interfejs do bramek SMS
+Summary:	Interface to internet SMS forwarding services
+Summary(pl):	Interfejs do bramek SMS
 Name:		smssend
 Version:	3.2
 Release:	1
@@ -9,7 +9,7 @@ Source0:	http://zekiller.skytech.org/fichiers/smssend/%{name}-%{version}.tar.gz
 # Source0-md5:	e67ed4f1df441dbf6c5e7fab2ca205f7
 URL:		http://zekiller.skytech.org/smssend_menu_en.html
 BuildRequires:	autoconf
-BuildRequires:	skyutils	
+BuildRequires:	skyutils-devel >= 2.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -23,13 +23,13 @@ Please keep in mind that these internet to SMS gateways may not
 tolerate and may even forbid their usage via scripts.
 
 %description -l pl
-smssend to narzêdzie udostêpniaj±ce interfejs wywo³ywany z lini
+smssend to narzêdzie udostêpniaj±ce interfejs wywo³ywany z linii
 poleceñ do GSM Short Message Service (SMS) poprzez internetowe bramki.
 Program wymaga aktywnego po³±czenia z internetem i mo¿e wymagaæ
-rejstracji na wspomnianych bramkach. Program jest wysoce
+rejestracji na wspomnianych bramkach. Program jest wysoce
 konfigurowalny dla innych bramek ni¿ w dostarczonych przyk³adach.
 
-Proszê we¼ pod uwagê fakt, ¿e niektóre z bramek SMS nie toleruj± a
+Proszê wzi±æ pod uwagê fakt, ¿e niektóre z bramek SMS nie toleruj±, a
 nawet uniemo¿liwiaj± korzystanie z nich za pomoc± skryptów.
 
 %prep
@@ -37,15 +37,15 @@ nawet uniemo¿liwiaj± korzystanie z nich za pomoc± skryptów.
 
 %build
 %{__autoconf}
-%configure \
-	--with-skyutils=/usr/bin
+%configure
+
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
-
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
