@@ -6,7 +6,6 @@ License:	GPL
 Group:		Utilities
 Source0:	http://zekiller.skytech.org/fichiers/smssend/%{name}-%{version}.tar.gz
 URL:		http://zekiller.skytech.org/smssend_menu_en.html
-Patch0:		%{name}-1.9-debug+dump.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
