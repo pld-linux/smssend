@@ -2,7 +2,7 @@ Summary:	interface to internet SMS forwarding services
 Summary(pl):	interfejs do bramek SMS
 Name:		smssend
 Version:	2.7
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://zekiller.skytech.org/fichiers/smssend/%{name}-%{version}.tar.gz
@@ -55,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/smssend
 %{_mandir}/man1/*
-%lang(fr) %{_mandir}/fr/man1
+%lang(fr) %{_mandir}/fr/man1/*
