@@ -1,12 +1,12 @@
 Summary:	Interface to internet SMS forwarding services
 Summary(pl):	Interfejs do bramek SMS
 Name:		smssend
-Version:	3.3
+Version:	3.4
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://zekiller.skytech.org/fichiers/smssend/%{name}-%{version}.tar.gz
-# Source0-md5:	801bb1889567fc8c1619866b2006d0bc
+# Source0-md5:	3545297fe6a54476ee8d3295fb99074d
 URL:		http://zekiller.skytech.org/smssend_menu_en.html
 BuildRequires:	autoconf
 BuildRequires:	skyutils-devel >= 2.4
