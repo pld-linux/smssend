@@ -1,7 +1,7 @@
 Summary:	interface to internet SMS forwarding services
 Summary(pl):	interfejs do bramek SMS
 Name:		smssend
-Version:	2.5
+Version:	2.6
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
