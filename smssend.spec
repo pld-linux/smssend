@@ -4,7 +4,9 @@ Name:		smssend
 Version:	2.5
 Release:	1
 License:	GPL
-Group:		Utilities
+Group:		Networking/Utilities
+Group(de):	Netzwerkwesen/Werkzeuge
+Group(pl):	Sieciowe/Narzêdzia
 Source0:	http://zekiller.skytech.org/fichiers/smssend/%{name}-%{version}.tar.gz
 URL:		http://zekiller.skytech.org/smssend_menu_en.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -21,13 +23,13 @@ tolerate and may even forbid their usage via scripts.
 
 %description -l pl
 smssend to narzêdzie udostêpniaj±ce interfejs wywo³ywany z lini
-poleceñ do GSM Short Message Service (SMS) poprzez internetowe
-bramki. Program wymaga aktywnego po³±czenia z internetem i mo¿e
-wymagaæ rejstracji na wspomnianych bramkach. Program jest wysoce
+poleceñ do GSM Short Message Service (SMS) poprzez internetowe bramki.
+Program wymaga aktywnego po³±czenia z internetem i mo¿e wymagaæ
+rejstracji na wspomnianych bramkach. Program jest wysoce
 konfigurowalny dla innych bramek ni¿ w dostarczonych przyk³adach.
 
-Proszê we¼ pod uwagê fakt, ¿e niektóre z bramek SMS nie toleruj±
-a nawet uniemo¿liwiaj± korzystanie z nich za pomoc± skryptów.
+Proszê we¼ pod uwagê fakt, ¿e niektóre z bramek SMS nie toleruj± a
+nawet uniemo¿liwiaj± korzystanie z nich za pomoc± skryptów.
 
 %prep
 %setup -q
@@ -35,12 +37,12 @@ a nawet uniemo¿liwiaj± korzystanie z nich za pomoc± skryptów.
 %build
 %configure \
 	--enable-skyutils
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf AUTHORS ChangeLog NEWS README
 
