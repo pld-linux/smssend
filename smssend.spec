@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://zekiller.skytech.org/fichiers/smssend/%{name}-%{version}.tar.gz
+# Source0-md5:	83b9c5ee2287b2534a9a3deabdd375e9
 URL:		http://zekiller.skytech.org/smssend_menu_en.html
 BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
