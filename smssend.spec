@@ -1,7 +1,7 @@
 Summary:	interface to internet SMS forwarding services
 Summary(pl):	interfejs do bramek SMS
 Name:		smssend
-Version:	2.6
+Version:	2.7
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
@@ -9,6 +9,7 @@ Group(de):	Netzwerkwesen/Werkzeuge
 Group(pl):	Sieciowe/Narzêdzia
 Source0:	http://zekiller.skytech.org/fichiers/smssend/%{name}-%{version}.tar.gz
 URL:		http://zekiller.skytech.org/smssend_menu_en.html
+BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,6 +36,7 @@ nawet uniemo¿liwiaj± korzystanie z nich za pomoc± skryptów.
 %setup -q
 
 %build
+autoconf
 %configure \
 	--enable-skyutils
 %{__make}
