@@ -34,7 +34,7 @@ nawet uniemo¿liwiaj± korzystanie z nich za pomoc± skryptów.
 %setup -q
 
 %build
-autoconf
+%{__autoconf}
 %configure \
 	--enable-skyutils
 %{__make}
