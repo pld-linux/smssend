@@ -1,5 +1,5 @@
 Summary:	Interface to internet SMS forwarding services
-Summary(pl.UTF-8):   Interfejs do bramek SMS
+Summary(pl.UTF-8):	Interfejs do bramek SMS
 Name:		smssend
 Version:	3.5
 Release:	1
