@@ -1,5 +1,5 @@
 Summary:	Interface to internet SMS forwarding services
-Summary(pl):	Interfejs do bramek SMS
+Summary(pl.UTF-8):   Interfejs do bramek SMS
 Name:		smssend
 Version:	3.5
 Release:	1
@@ -22,15 +22,15 @@ other gateways than provided, examples are included.
 Please keep in mind that these internet to SMS gateways may not
 tolerate and may even forbid their usage via scripts.
 
-%description -l pl
-smssend to narzêdzie udostêpniaj±ce interfejs wywo³ywany z linii
-poleceñ do GSM Short Message Service (SMS) poprzez internetowe bramki.
-Program wymaga aktywnego po³±czenia z internetem i mo¿e wymagaæ
+%description -l pl.UTF-8
+smssend to narzÄ™dzie udostÄ™pniajÄ…ce interfejs wywoÅ‚ywany z linii
+poleceÅ„ do GSM Short Message Service (SMS) poprzez internetowe bramki.
+Program wymaga aktywnego poÅ‚Ä…czenia z internetem i moÅ¼e wymagaÄ‡
 rejestracji na wspomnianych bramkach. Program jest wysoce
-konfigurowalny dla innych bramek ni¿ w dostarczonych przyk³adach.
+konfigurowalny dla innych bramek niÅ¼ w dostarczonych przykÅ‚adach.
 
-Proszê wzi±æ pod uwagê fakt, ¿e niektóre z bramek SMS nie toleruj±, a
-nawet uniemo¿liwiaj± korzystanie z nich za pomoc± skryptów.
+ProszÄ™ wziÄ…Ä‡ pod uwagÄ™ fakt, Å¼e niektÃ³re z bramek SMS nie tolerujÄ…, a
+nawet uniemoÅ¼liwiajÄ… korzystanie z nich za pomocÄ… skryptÃ³w.
 
 %prep
 %setup -q -n %{name}
